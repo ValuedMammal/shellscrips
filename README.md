@@ -1,2 +1,3 @@
-# LN-shells
-shell scripts for lnd
+# shellscrips
+shell scripts and other stuff
+
