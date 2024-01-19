@@ -24,5 +24,6 @@ git branch > /dev/null 2>&1 \
     || oops "Err: must be in a git repo"
 
 n=$1
-git fetch origin pull/"${n}"/head:pull/"${n}" \
-    && git switch pull/"${n}"
+git fetch origin pull/"${n}"/head:pr/"${n}" \
+    && git switch pr/"${n}"
+
