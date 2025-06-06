@@ -1,0 +1,66 @@
+# This is Git's per-user configuration file.
+
+[user]
+# Please adapt and uncomment the following lines:
+	# name = valued mammal
+	# email = valuedmammal@protonmail.com
+	# signingkey =
+    # ghtoken =
+
+[gpg]
+    # allowedSignersFile = /path/to/allowed-signers-file
+
+[gpg "ssh"]
+    # allowedSignersFile = /path/to/allowed-signers-file
+
+[commit]
+    gpgsign = true
+
+[tag]
+	gpgSign = true
+
+[color]
+	ui = auto
+
+[diff]
+    context = 12
+
+[alias]
+    b = branch -vv
+    bs = branch --show
+    buu = branch --unset-upstream
+    c = commit
+    ca = commit --all
+    ce = commit --allow-empty
+    cp = cherry-pick
+    cm = commit --message
+    cam = commit --all --message
+    l = log -10 --pretty=format:\"%h - %an, %ad|%s\"
+    ll = log --pretty=format:\"%h - %an, %ad|%s\"
+    lm = log --pretty=format:\"%h - %an, %ad|%s\" master..HEAD
+    lhm = log --pretty=format:\"%h - %an, %ad|%s\" HEAD..master
+    m = switch master
+    mf = merge master --ff-only
+    mff = merge --ff-only
+    mn = merge --no-commit
+    n = switch main
+    p = commit --amend
+    pfl = push --force-with-lease
+    r = rebase
+    ri = rebase -i
+    ria = rebase -i --autosquash
+    riaa = rebase -i --autosquash --autostash
+    re = remote -v
+    s = status --short
+    ss = status
+    sw = switch
+    undo = reset HEAD~1
+
+[color "diff"]
+    plain = dim
+    meta = normal
+    frag = normal
+    func = normal
+    old = magenta
+    new = brightcyan
+    whitespace = blue
