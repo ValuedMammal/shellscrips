@@ -1,10 +1,11 @@
 #!/bin/bash
+
 set -euo pipefail
 
 # Script that fetches a remote PR branch, and checks it out.
-# Note: it's assumed the remote origin is named 'origin',
-# and that all local PR branches should be called 'pr/<N>'
-# where 'N' is the PR number.
+# Note: it is assumed the remote origin is named "origin",
+# and that all local PR branches should be called "pr/n"
+# where 'n' is the PR number.
 
 # Usage: $ `review <N>`
 
